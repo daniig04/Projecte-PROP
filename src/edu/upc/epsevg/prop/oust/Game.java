@@ -2,7 +2,8 @@ package edu.upc.epsevg.prop.oust;
 
 import edu.upc.epsevg.prop.oust.players.HumanPlayer;
 import edu.upc.epsevg.prop.oust.players.RandomPlayer;
-import edu.upc.epsevg.prop.oust.players.PingPongPlayer;
+import edu.upc.epsevg.prop.oust.players.PlayerMiniMax;
+import edu.upc.epsevg.prop.oust.players.PlayerMiniMaxIDS;
 
 import javax.swing.SwingUtilities;
 
@@ -42,8 +43,8 @@ public class Game {
                 IPlayer player1 = new MOustValuablePlayer();
                 //IPlayer player2 = new HumanPlayer("Human2");
                 //IPlayer player2 = new PingPongPlayer();   
-                IPlayer player2 = new PingPongPlayer();              
-                
+                IPlayer player2 = new PlayerMiniMaxIDS();              
+                //IPlayer player2 = new PlayerMiniMax(4);
                 //---------------------------------------------
                 // Customitzeu els paràmetres
                 //---------------------------------------------
